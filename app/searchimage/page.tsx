@@ -3,11 +3,11 @@ import React from "react";
 const ImageSearch = () => {
   return (
     <>
-      <div className="block p-6 rounded-lg shadow-lg bg-white max-w-lg">
-          <form className="max-w-sm items-center">
+      <div className="block p-6 rounded-lg shadow-lg bg-white">
+          <form className="items-center">
             <div className="form-group mb-6">
               <input type="text" className="form-control block
-                w-full
+                w-2/6
                 px-3
                 py-1.5
                 text-base
@@ -24,7 +24,7 @@ const ImageSearch = () => {
             </div>
             <div className="form-group mb-6">
               <input type="number" className="form-control block
-                w-full
+                w-2/6
                 px-3
                 py-1.5
                 text-base
@@ -39,18 +39,8 @@ const ImageSearch = () => {
                 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput91"
                 placeholder="Email address"/>
             </div>
-            <div className="form-group form-check text-center mb-6">
-              <input type="checkbox"
-                className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                id="exampleCheck96" checked/>
-              <label className="form-check-label inline-block text-gray-800">I have read and agree to the terms</label>
-            </div>
-            <button type="submit" className="
-              w-full
-              px-6
-              py-2.5
-              bg-blue-600
-              text-white
+            
+            <button type="submit" className="w-2/6 px-6 py-2.5 bg-blue-600 text-white
               font-medium
               text-xs
               leading-tight
