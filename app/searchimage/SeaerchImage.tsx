@@ -1,6 +1,7 @@
 'use client'
 import {useRouter} from 'next/navigation'
 import React, { useState} from "react";
+import axios from 'axios'
 
 const SeaerchImage = () => {
     const dropDownList = ['small', 'medium', 'large'];
@@ -12,15 +13,14 @@ const SeaerchImage = () => {
         e.preventDefault();
         console.log(JSON.stringify(form), 'formData');
         
-        console.log(e , 'e formdata');
-        const apiResponse = await fetch(`http://localhost:5000/openai/gererateimage`,{
+        const apiResponse = await fetch(`http://localhost:3000/api/openai/imagegenerate`,{
             method:'POST',
             headers:{
-                'Content-Type':'application/json',            
+              'Content-Type': 'application/json'          
             },
-            mode: 'no-cors',
-            body: JSON.stringify(form)
+            body: JSON.stringify(form),
         })
+
         console.log(apiResponse, 'apiResponse'); 
         return apiResponse.json()
     }
