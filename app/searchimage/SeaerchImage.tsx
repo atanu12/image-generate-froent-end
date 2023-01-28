@@ -71,7 +71,7 @@ const SeaerchImage = () => {
                 value={form.size}
                 onChange={(e) => setForm({...form,size: e.target.value})}
                 required>
-                {dropDownList.map(list =><option value={list}>{list}</option> )}
+                {dropDownList.map(list =><option key={list} value={list}>{list}</option> )}
             </select>
           </div>
 
